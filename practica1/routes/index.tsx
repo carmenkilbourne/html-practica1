@@ -1,5 +1,4 @@
 import { Button } from "../components/Button.tsx";
-import Saluda from "../components/Saluda.tsx";
 import ButtonEx from "../islands/ButtonEx.tsx";
 
 export default function Home() {

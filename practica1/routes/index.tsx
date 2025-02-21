@@ -1,10 +1,11 @@
 import { Button } from "../components/Button.tsx";
+import Saluda from "../components/Saluda.tsx";
 import ButtonEx from "../islands/ButtonEx.tsx";
 
 export default function Home() {
-    
+
     return (
-        
+
         <div className="max-w-screen-md mx-auto flex flex-col  justify-center">
             <table>
                 <tbody>
@@ -115,10 +116,14 @@ export default function Home() {
                     <tr>
                         <td>
                             <h2>Formación</h2>
-                            <h5>Universidad Antonio Nebrija</h5>
+                            <details>
+                                <summary  className="button">Mostrar mas</summary>
+                                <h5>Universidad Antonio Nebrija</h5>
                             <h6 style="color:gray;">
                                 Ingenieria Informática
                             </h6>
+                            </details>
+                           
                         </td>
                         <td>
                             <h5 className="text-right">2023-Actualidad</h5>
@@ -126,6 +131,7 @@ export default function Home() {
                     </tr>
                 </tbody>
             </table>
+
         </div>
     );
 }
